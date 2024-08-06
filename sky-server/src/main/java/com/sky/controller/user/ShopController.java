@@ -32,7 +32,8 @@ public class ShopController {
     @ApiOperation("获取店铺营业状态")
     public Result<Integer> getStatus(){
 
-        Integer status = (Integer) redisTemplate.opsForValue().get(RedisConstant.key);
+        String statusStr =  (String) redisTemplate.opsForValue().get(RedisConstant.key);
+        Integer status = Integer.valueOf(statusStr);
         log.info("获取到店铺的营业状态为：{}",status == 1 ? "营业中" : "打烊中");
         return Result.success(status);
     }

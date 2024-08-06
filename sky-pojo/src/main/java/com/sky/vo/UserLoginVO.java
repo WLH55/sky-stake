@@ -7,6 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * 接收微信返回回来的用户信息
+ */
+
 @Data
 @Builder
 @NoArgsConstructor

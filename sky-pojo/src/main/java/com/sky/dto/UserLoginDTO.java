@@ -9,6 +9,9 @@ import java.io.Serializable;
  */
 @Data
 public class UserLoginDTO implements Serializable {
+    /**
+     * 临时登录授权码
+     */
 
     private String code;
 
