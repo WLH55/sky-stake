@@ -23,6 +23,10 @@ import javax.servlet.http.HttpServletResponse;
  * @createTime 2024/8/6
  * @copyright 2024 Amarsoft
  */
+
+/**
+ * jwt令牌校验的拦截器
+ */
 @Component
 @Slf4j
 public class JwtTokenUserInterceptor implements HandlerInterceptor {
@@ -41,10 +45,10 @@ public class JwtTokenUserInterceptor implements HandlerInterceptor {
      */
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //判断当前拦截到的是Controller的方法还是其他资源
-        if (!(handler instanceof HandlerMethod)) {
-            //当前拦截到的不是动态方法，直接放行
-            return true;
-        }
+//        if (!(handler instanceof HandlerMethod)) {
+//            //当前拦截到的不是动态方法，直接放行
+//            return true;
+//        }
 
         //1、从请求头中获取令牌
         String token = request.getHeader(jwtProperties.getUserTokenName());
