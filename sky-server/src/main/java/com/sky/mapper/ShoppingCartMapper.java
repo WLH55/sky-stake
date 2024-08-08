@@ -22,7 +22,7 @@ import java.util.List;
 public interface ShoppingCartMapper {
 
 
-    @Update("update shopping_card set number = #{number} where id = #{id}")
+    @Update("update shopping_cart set number = #{number} where id = #{id}")
     void updateNumberById(ShoppingCart shoppingCart);
 
     List<ShoppingCart> list(ShoppingCart shoppingCart);

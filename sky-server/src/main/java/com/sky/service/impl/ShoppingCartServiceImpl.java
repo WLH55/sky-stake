@@ -47,6 +47,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         //判断购物车是否已经存在
         List<ShoppingCart> list = shoppingCartMapper.list(shoppingCart);
         if(list != null && list.size() == 1){
+            shoppingCart = list.get(0);
             shoppingCart.setNumber(list.get(0).getNumber() + 1);
             shoppingCartMapper.updateNumberById(shoppingCart);
         }else{
