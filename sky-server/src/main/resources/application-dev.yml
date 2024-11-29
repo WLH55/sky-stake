@@ -7,9 +7,9 @@ sky:
     username: root
     password: lhshiwode
   wechat:
-    appid: wx5e736e0b47a32a67
-    secret: 6fd5cdf3c3055b58c77e1d4e905b1742
-    mchid: 1561414331
+    appid:
+    secret:
+    mchid:
     mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
     privateKeyFilePath: D:\apiclient_key.pem
     apiV3Key: CZBK51236435wxpay435434323FFDuv3
@@ -26,6 +26,6 @@ sky:
 
   alioss:
     endpoint: oss-cn-beijing.aliyuncs.com
-    access-key-id: LTAI5tDqK7MgePmag1rqV7b9
-    access-key-secret: rrClmPuzrcOOAoYAneUehbAtRdBEeo
-    bucket-name: wqxqq
+    access-key-id:
+    access-key-secret:
+    bucket-name:
