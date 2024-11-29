@@ -17,9 +17,9 @@ sky:
     notifyUrl: https://www.weixin.qq.com/wxpay/pay.php
     refundNotifyUrl: https://www.weixin.qq.com/wxpay/pay.php
   redis:
-    host: 8.134.200.99
+    host: 127.0.0.1
     port: 6379
-    password: qxxihuanwenlong
+    password:
     database: 10
 
 
